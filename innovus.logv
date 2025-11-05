@@ -1,0 +1,13 @@
+[10/31 18:08:11      0s] 
+[10/31 18:08:11      0s] Cadence Innovus(TM) Implementation System.
+[10/31 18:08:11      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/31 18:08:11      0s] 
+[10/31 18:08:11      0s] Version:	v20.14-s095_1, built Mon Apr 19 14:41:42 PDT 2021
+[10/31 18:08:11      0s] Options:	
+[10/31 18:08:11      0s] Date:		Fri Oct 31 18:08:11 2025
+[10/31 18:08:11      0s] Host:		cad6 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (6cores*12cpus*Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz 12288KB)
+[10/31 18:08:11      0s] OS:		Red Hat Enterprise Linux Server release 7.9 (Maipo)
+[10/31 18:08:11      0s] 
+[10/31 18:08:11      0s] License:
+[10/31 18:08:11      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[10/31 18:08:11      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.

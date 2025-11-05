@@ -1,0 +1,571 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Fri Oct 31 18:10:01 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.14-s095_1 (64bit) 04/19/2021 14:41 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.14-s095_1 NR210411-1939/20_14-UB (database version 18.20.547) {superthreading v2.13}
+#@(#)CDS: AAE 20.14-s018 (64bit) 04/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.14-s027_1 () Apr 13 2021 21:29:07 ( )
+#@(#)CDS: SYNTECH 20.14-s017_1 () Mar 25 2021 13:07:27 ( )
+#@(#)CDS: CPE v20.14-s080
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+save_global Default.globals
+set init_gnd_net VSS
+set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+set init_design_settop 0
+set init_verilog outputs/csa_multiplier_16bit.v
+set init_mmmc_file Default.view
+set init_pwr_net VDD
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site gsclib090site -r 0.95339827319 0.8 6 6 6 6
+uiSetTool select
+getIoFlowFlag
+fit
+clearGlobalNets
+clearGlobalNets
+clearGlobalNets
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+addIoFiller -cell EMPT -prefix FILLER -side n
+addIoFiller -cell EMPT -prefix FILLER -side n
+addIoFiller -cell EMPT -prefix FILLER -side s
+addIoFiller -cell EMPT -prefix FILLER -side n
+addIoFiller -cell EMPT -prefix FILLER -side s
+addIoFiller -cell EMPT -prefix FILLER -side w
+addIoFiller -cell EMPT -prefix FILLER -side w
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tiehi -pin VSS -instanceBasename * -hierarchicalInstance {}
+zoomBox -75.97500 -12.30100 166.21900 104.79100
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -instanceBasename * -hierarchicalInstance {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer Metal9 -direction horizontal -width 1.8 -spacing 1.8 -set_to_set_distance 2 -start_from bottom -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer Metal9 -direction horizontal -width 1.8 -spacing 1.8 -set_to_set_distance 2 -start_from bottom -start_offset 0 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer Metal9 -direction horizontal -width 1.8 -spacing 1.8 -set_to_set_distance 2 -start_from bottom -start_offset 0 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer Metal8 -direction vertical -width 1.8 -spacing 1.8 -set_to_set_distance 2 -start_from left -start_offset 0 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer Metal8 -direction vertical -width 1.8 -spacing 1.8 -set_to_set_distance 2 -start_from left -start_offset 0 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal9(9) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal9(9) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal9(9) }
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal9(9) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal9(9) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal9(9) }
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+setNanoRouteMode -quiet -droutePostRouteWidenWireRule LEFDefaultRouteSpec_gpdk090
+setNanoRouteMode -quiet -timingEngine {}
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DLY4X4 DLY4X1 DLY3X4 DLY3X1 DLY2X4 DLY2X1 DLY1X4 DLY1X1 CLKBUFX8 CLKBUFX6 CLKBUFX4 CLKBUFX3 CLKBUFX20 CLKBUFX2 CLKBUFX16 CLKBUFX12 BUFX8 BUFX6 BUFX4 BUFX3 BUFX20 BUFX2 BUFX16 BUFX12 INVXL INVX8 INVX6 INVX4 INVX3 INVX20 INVX2 INVX16 INVX12 INVX1 CLKINVX8 CLKINVX6 CLKINVX4 CLKINVX3 CLKINVX20 CLKINVX2 CLKINVX16 CLKINVX12 CLKINVX1} -maxAllowedDelay 1
+setPlaceMode -reset
+setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 1 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 1 -moduleAwareSpare 0 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DLY4X4 DLY4X1 DLY3X4 DLY3X1 DLY2X4 DLY2X1 DLY1X4 DLY1X1 CLKBUFX8 CLKBUFX6 CLKBUFX4 CLKBUFX3 CLKBUFX20 CLKBUFX2 CLKBUFX16 CLKBUFX12 BUFX8 BUFX6 BUFX4 BUFX3 BUFX20 BUFX2 BUFX16 BUFX12 INVXL INVX8 INVX6 INVX4 INVX3 INVX20 INVX2 INVX16 INVX12 INVX1 CLKINVX8 CLKINVX6 CLKINVX4 CLKINVX3 CLKINVX20 CLKINVX2 CLKINVX16 CLKINVX12 CLKINVX1} -maxAllowedDelay 1
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DLY4X4 DLY4X1 DLY3X4 DLY3X1 DLY2X4 DLY2X1 DLY1X4 DLY1X1 CLKBUFX8 CLKBUFX6 CLKBUFX4 CLKBUFX3 CLKBUFX20 CLKBUFX2 CLKBUFX16 CLKBUFX12 BUFX8 BUFX6 BUFX4 BUFX3 BUFX20 BUFX2 BUFX16 BUFX12 INVXL INVX8 INVX6 INVX4 INVX3 INVX20 INVX2 INVX16 INVX12 INVX1 CLKINVX8 CLKINVX6 CLKINVX4 CLKINVX3 CLKINVX20 CLKINVX2 CLKINVX16 CLKINVX12 CLKINVX1} -maxAllowedDelay 1
+setPlaceMode -fp false
+place_design
+setPlaceMode -fp false
+place_design
+zoomBox -100.57100 -24.02050 184.36350 113.73500
+zoomBox -129.44700 -37.59650 205.77050 124.46900
+zoomBox -163.41800 -53.56800 230.95550 137.09700
+zoomBox -203.38400 -72.35850 260.58450 151.95350
+zoomBox -163.46000 -53.61000 230.91350 137.05500
+zoomBox -76.16150 -12.61450 166.03350 104.47800
+zoomBox -55.32100 -2.82750 150.54500 96.70100
+zoomBox -76.16150 -12.61450 166.03350 104.47800
+zoomBox -100.68000 -24.12850 184.25550 113.62750
+zoomBox -76.16150 -12.61450 166.03350 104.47800
+zoomBox -141.10800 -47.75550 253.26700 142.91050
+zoomBox -115.85200 -34.94950 219.36700 127.11650
+zoomBox -94.38450 -24.06500 190.55200 113.69150
+zoomBox -60.62650 -6.99600 145.24000 92.53300
+zoomBox -47.44300 -0.33000 127.54450 84.27000
+zoomBox -26.71150 10.15300 99.71700 71.27650
+zoomBox -18.61500 14.24700 88.84950 66.20200
+zoomBox -0.91050 23.19850 65.08600 55.10550
+zoomBox 3.31550 25.33550 59.41300 52.45650
+zoomBox 12.55700 30.00800 47.00800 46.66400
+zoomBox 14.76300 31.12350 44.04650 45.28100
+zoomBox 21.71800 34.64000 34.71200 40.92200
+zoomBox 22.54950 35.06050 33.59500 40.40050
+zoomBox 21.70450 34.61950 34.69900 40.90200
+zoomBox 14.65450 31.03050 43.94200 45.19000
+zoomBox -6.37400 20.12400 71.28150 57.66750
+zoomBox -48.70350 -1.83100 126.31400 82.78350
+zoomBox -26.58700 4.95700 122.17800 76.87950
+zoomBox -74.72300 -9.88550 131.18000 89.66100
+zoomBox -104.63500 -19.43350 137.60400 97.68000
+zoomBox -18.92500 14.12650 107.52600 75.26100
+zoomBox 33.44050 32.44150 89.54800 59.56750
+zoomBox 56.75100 40.66150 81.64650 52.69750
+zoomBox 63.92550 43.19150 79.21450 50.58300
+zoomBox 68.33150 44.74550 77.72100 49.28500
+zoomBox 69.38350 45.11650 77.36450 48.97500
+zoomBox 71.68350 45.92750 76.58500 48.29700
+zoomBox 72.23250 46.12050 76.39900 48.13500
+zoomBox 67.09150 44.30800 78.14100 49.65000
+zoomBox 65.63550 43.79450 78.63450 50.07900
+zoomBox 54.01150 40.76300 78.91400 52.80250
+zoomBox 31.75250 34.98400 79.46050 58.04900
+zoomBox -26.62400 19.84100 80.89900 71.82450
+zoomBox -122.71500 -5.08450 83.26750 94.50050
+zoomBox -249.02750 -37.84950 86.38050 124.30800
+zoomBox -132.28100 -0.92600 42.80500 83.72150
+zoomBox -61.35500 21.56300 16.33250 59.12200
+zoomBox -45.63900 26.55900 10.49050 53.69550
+zoomBox -26.57250 31.36450 7.89850 48.03000
+zoomBox -12.03400 35.08100 5.95950 43.78000
+zoomBox -7.55100 37.85750 1.84300 42.39900
+zoomBox -20.00600 33.57500 4.90300 45.61750
+zoomBox -45.07600 24.95550 11.06300 52.09650
+zoomBox -101.57900 5.52800 24.94550 66.69800
+zoomBox -228.92200 -38.25550 56.23300 99.60650
+zoomBox -113.43900 2.06900 35.41500 74.03450
+zoomBox -161.64900 -14.48750 44.37800 85.11900
+gui_select -rect {-33.54800 60.34100 -128.81850 69.01350}
+selectInst g17707__4319
+deselectAll
+gui_select -rect {-11.00050 79.04850 23.31700 -5.32000}
+deselectAll
+zoomBox -81.01500 19.07500 10.40150 63.27150
+zoomBox -45.23750 33.96650 -4.67400 53.57750
+zoomBox -92.24900 14.54950 15.30700 66.54900
+zoomBox -293.41950 -67.30100 101.30100 123.53200
+zoomBox -879.00550 -301.57400 352.27850 293.70700
+zoomBox -1667.62050 -613.83400 691.13400 526.53800
+zoomBox -3176.80850 -1208.46800 1341.82550 976.12700
+zoomBox -4388.92500 -1683.79250 1865.24050 1339.86900
+gui_select -rect {631.70700 -273.50250 259.39050 -269.74200}
+gui_select -rect {-368.65850 557.62800 334.60600 -954.20250}
+gui_select -rect {500.08000 -1006.85350 793.42000 -1003.09250}
+deselectAll
+gui_select -rect {-831.23350 151.46450 -1406.63200 422.24050}
+zoomBox -1913.59400 -1006.08800 1351.12000 572.28250
+zoomBox -1233.17200 -770.20100 1125.58400 370.17150
+zoomBox -1041.05350 -631.91000 963.88950 337.40700
+zoomBox -877.75250 -514.36200 826.44900 309.55750
+zoomBox -738.94650 -414.44650 709.62450 285.88500
+zoomBox -620.96150 -329.51800 610.32400 265.76350
+zoomBox -362.97300 -143.81200 393.19050 221.76550
+zoomBox -166.71200 -2.53950 228.01050 188.29450
+zoomBox -271.55200 -21.95750 274.77800 242.17300
+zoomBox -338.22250 -34.30600 304.51900 276.43600
+zoomBox -417.34050 -45.96900 338.82600 319.61000
+zoomBox -619.92600 -75.83350 426.67150 430.15850
+zoomBox -401.36400 10.13400 241.37900 320.87700
+zoomBox -976.39250 -216.38950 727.82150 607.53600
+zoomBox -215.32750 -122.47100 540.84200 243.10950
+zoomBox -192.47900 -108.48900 450.26550 202.25450
+zoomBox -142.38350 -86.86200 322.00000 137.65050
+zoomBox -122.99000 -76.85100 271.73600 113.98450
+zoomBox -98.34950 -51.00300 186.84050 86.87600
+zoomBox -86.23350 -34.05100 156.17800 83.14600
+selectWire 6.0900 5.9100 93.0900 6.2700 1 VDD
+deselectAll
+selectWire 6.0900 5.9100 93.0900 6.2700 1 VDD
+getCTSMode -engine -quiet
+getCTSMode -engine -quiet
+getCTSMode -engine -quiet
+zoomBox -132.47900 -67.99600 203.03850 94.21450
+zoomBox -161.88750 -89.42950 232.83900 101.40650
+gui_select -rect {-2.85750 13.82150 26.10000 29.72450}
+deselectAll
+deselectAll
+zoomBox -30.62850 29.48700 -31.10300 27.58800
+zoomBox -34.04550 27.07450 -27.64900 30.16700
+zoomBox -38.02050 25.37100 -23.60250 32.34150
+zoomBox -34.60700 26.83350 -27.07900 30.47300
+zoomSelected
+zoomSelected
+zoomSelected
+zoomBox -38.01800 25.12650 -23.59650 32.09900
+zoomBox -53.15600 17.91000 -8.16650 39.66100
+zoomBox -90.41450 -18.52750 74.69800 61.29850
+zoomBox -53.13850 17.82900 -8.14700 39.58100
+zoomBox -66.99050 6.11450 19.20200 47.78550
+zoomBox -95.44650 -3.03950 23.85100 54.63650
+zoomBox -115.70150 -7.17900 24.64850 60.67500
+zoomBox -139.08400 -11.76650 26.03350 68.06200
+zoomBox -279.26150 -38.29200 37.05350 114.63500
+zoomBox -259.36250 -10.10600 -30.82500 100.38350
+zoomBox -200.43200 3.18200 -35.31350 83.01100
+zoomBox -114.76450 23.07450 -41.49950 58.49550
+zoomBox -157.65250 13.65300 -38.35100 71.33100
+zoomBox -174.69150 3.91650 19.57150 97.83550
+zoomBox -151.90900 16.50150 -11.55400 84.35800
+zoomBox -174.52850 8.20750 19.73450 102.12650
+zoomBox -213.20350 -19.99200 55.67250 110.00000
+zoomBox -266.73400 -58.61850 105.41450 121.30200
+zoomBox -213.20550 -21.23450 55.67250 108.75800
+zoomBox -266.61100 -58.18400 105.53850 121.73650
+zoomBox -300.57300 -81.56300 137.24950 130.10850
+zoomBox -442.05800 -176.74900 270.86550 167.92350
+zoomBox -901.14050 -482.84750 705.61000 293.95800
+zoomBox -1935.62750 -1165.02350 1685.58550 585.70100
+zoomBox -2262.25500 -1374.83400 1997.99550 684.84200
+zoomBox -2651.04350 -1610.36750 2361.01550 812.78050
+zoomBox -3108.44200 -1887.46600 2788.09800 963.29650
+zoomBox -1651.21100 -1005.49500 1426.82000 482.62100
+zoomBox -1412.72400 -861.40300 1203.60250 403.49550
+zoomBox -1184.28750 -700.22300 1039.59050 374.94100
+zoomBox -990.11650 -563.22000 900.18000 350.66950
+zoomBox -663.50350 -388.14050 702.23650 272.14500
+zoomBox -535.88150 -319.03250 624.99800 242.21050
+zoomBox -447.50650 -252.01850 539.24100 225.03800
+zoomBox -308.53750 -146.63900 404.38800 198.03450
+zoomBox -208.13200 -70.50200 306.95650 178.52450
+zoomBox -174.26250 -65.71650 263.56250 145.95600
+zoomBox -154.55650 -47.66900 217.59500 132.25250
+zoomBox -137.80650 -32.42950 178.52250 120.50400
+zoomBox -123.56900 -19.47600 145.31100 110.51750
+zoomBox -56.91350 0.42400 137.35250 94.34450
+zoomBox -77.15700 -1.94650 151.39100 108.54800
+zoomBox -100.97300 -4.73550 167.90700 125.25800
+zoomBox -128.99200 -8.13150 187.33750 144.80250
+zoomBox -142.48650 -20.95450 229.66650 158.96800
+zoomBox -104.62250 -11.15300 211.70850 141.78150
+zoomBox -142.55400 -21.05550 229.60000 158.86750
+zoomBox -187.65350 -31.99450 250.17500 179.67950
+zoomBox -141.33000 -25.36000 230.82400 154.56300
+zoomBox -101.82100 -18.98200 214.51000 133.95250
+zoomBox -88.26800 -16.10050 180.61350 113.89400
+zoomBox -101.85000 -18.92550 214.48200 134.00950
+zoomBox -118.33200 -31.27850 253.82350 148.64500
+zoomBox -101.85000 -23.18850 214.48200 129.74650
+zoomBox -65.88450 -4.25150 128.38350 89.67000
+zoomBox -57.21100 0.44450 107.91700 80.27800
+zoomBox -33.41000 6.90850 106.94900 74.76700
+zoomBox -47.00850 2.11250 118.12000 81.94600
+zoomBox -40.08250 8.23400 100.27650 76.09250
+zoomBox -46.53150 3.33400 118.59650 83.16750
+zoomBox -54.08450 -2.37850 140.18450 91.54350
+zoomBox -46.81250 3.43900 118.31600 83.27250
+zoomBox -54.06700 -2.22100 140.20200 91.70100
+zoomBox -29.78050 1.84450 135.34800 81.67800
+zoomBox -82.71600 -7.00350 145.83600 103.49300
+zoomBox -72.90300 -2.57150 121.36600 91.35050
+zoomBox -45.97050 2.44000 119.15800 82.27350
+zoomBox -72.95550 -2.58900 121.31350 91.33300
+zoomBox -104.47600 -6.85650 124.07600 103.64000
+zoomBox -72.48150 -2.38300 121.78800 91.53900
+zoomBox -21.52200 17.09950 118.83800 84.95850
+zoomBox -44.90700 8.26700 120.22350 88.10150
+zoomBox -72.29550 -1.84400 121.97600 92.07900
+zoomBox -103.17700 -10.19350 125.37750 100.30450
+zoomBox -44.10150 5.86250 121.03000 85.69750
+zoomBox -20.98550 12.11800 119.37650 79.97800
+zoomBox -23.26450 3.65750 141.86750 83.49300
+zoomBox -25.91100 -6.06800 168.36250 87.85600
+zoomBox -3.27100 0.38050 161.86150 80.21600
+zoomBox -1.14100 7.24700 139.22150 75.10700
+zoomBox 0.66950 13.08350 119.97750 70.76450
+zoomBox -4.30600 7.75350 136.05650 75.61350
+zoomBox -10.81500 1.46800 154.31750 81.30350
+zoomBox -27.67300 -14.66500 200.88500 95.83450
+zoomBox -25.57600 2.00150 139.55750 81.83750
+zoomBox -22.77600 8.57000 117.58750 76.43050
+zoomBox -20.39600 14.15300 98.91300 71.83450
+zoomBox 6.75950 21.10100 92.96050 62.77600
+zoomBox 17.37200 23.81450 90.64350 59.23850
+zoomBox -20.47300 14.12500 98.83800 71.80750
+zoomBox -37.78100 9.69350 102.58550 77.55550
+zoomBox -143.43600 -17.35850 125.46350 112.64450
+zoomBox -128.85900 -8.28750 99.70550 102.21500
+zoomBox -116.46850 -0.57700 77.81100 93.35000
+zoomBox -213.28200 -40.69300 158.89800 139.24250
+zoomBox -84.43550 -12.79950 144.13100 97.70400
+zoomBox -27.53050 -0.48050 137.60900 79.35850
+zoomBox 13.58350 8.42000 132.89750 66.10400
+zoomBox 17.79150 13.04750 119.20850 62.07900
+zoomBox 21.35850 16.98100 107.56350 58.65800
+zoomBox 17.79100 13.04750 119.20850 62.07900
+zoomBox 8.65600 2.97500 149.02600 70.83900
+zoomBox -12.02900 -19.83100 216.54100 90.67450
+zoomBox -10.65700 -5.18500 154.48550 74.65550
+zoomBox -10.13600 0.56450 130.23550 68.42900
+zoomBox -11.65950 -12.09400 182.62600 81.83600
+zoomBox -10.87100 -3.13900 154.27200 76.70150
+zoomBox -18.86200 -13.14550 175.42400 80.78450
+zoomBox -17.53000 -2.00000 147.61300 77.84050
+zoomBox -18.86200 -13.18050 175.42400 80.74950
+zoomBox -23.57400 -46.79000 245.33450 83.21750
+zoomBox -21.58500 -28.59850 206.98700 81.90750
+zoomBox -19.89450 -13.13650 174.39200 80.79400
+zoomBox -18.45800 0.00650 146.68600 79.84750
+zoomBox -16.21150 20.68650 103.10550 78.37200
+zoomBox -21.02350 13.59600 119.35000 81.46150
+zoomBox -26.68450 6.34150 138.46150 86.18350
+zoomBox -36.69100 -2.14050 157.59850 91.79150
+ui_view_box
+ui_view_box
+dbquery -area {-36.691 -2.1405 157.5985 91.7915} -objType inst
+dbquery -area {-36.691 -2.1405 157.5985 91.7915} -objType regular
+dbquery -area {-36.691 -2.1405 157.5985 91.7915} -objType special
+ui_view_box
+ui_view_box
+dbquery -area {-36.691 -2.1405 157.5985 91.7915} -objType inst
+dbquery -area {-36.691 -2.1405 157.5985 91.7915} -objType regular
+dbquery -area {-36.691 -2.1405 157.5985 91.7915} -objType special
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -routeTopRoutingLayer 9
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail
+zoomBox -32.81800 5.97350 132.32800 85.81550
+zoomBox -36.70850 -2.15800 157.58100 91.77400
+zoomBox -41.28600 -11.72450 187.29050 98.78400
+getCTSMode -engine -quiet
+create_ccopt_clock_tree_spec
+ctd_win -side none -unit_delay
+create_ccopt_clock_tree_spec
+ctd_win -side none -unit_delay
+zoomBox -39.05950 -1.78700 155.23050 92.14500
+zoomBox -41.28600 -11.72500 187.29050 98.78350
+zoomBox -43.90550 -23.41600 225.00800 106.59400
+zoomBox -39.05950 -1.78750 155.23050 92.14450
+zoomBox -34.14600 19.94200 85.17250 77.62800
+zoomBox -27.41950 23.81650 74.00100 72.84950
+zoomBox -21.69350 27.10950 64.51450 68.78800
+zoomBox -83.42900 6.69200 110.86400 100.62550
+zoomBox -41.08700 14.21350 99.28950 82.08050
+zoomBox -24.55100 17.15100 94.76950 74.83800
+zoomBox -83.79100 6.46600 110.50300 100.40000
+zoomBox -180.25200 -10.93300 136.12350 142.02300
+zoomBox -100.53550 -0.95550 128.04650 109.55550
+zoomBox -20.44600 9.06900 119.93150 76.93650
+zoomBox -100.53600 -0.95600 128.04650 109.55550
+zoomBox -42.33350 6.42300 122.81750 86.26750
+zoomBox -137.61900 -5.68300 131.30400 124.33150
+zoomBox -292.77400 -25.39500 145.12250 186.31200
+zoomBox -135.28250 -4.76950 133.64150 125.24550
+zoomBox -65.68200 4.38450 128.61600 98.32050
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report csa_multiplier_16bit.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+zoomBox -83.12500 -5.55350 145.46100 104.95950
+zoomBox -103.69450 -17.14800 165.23000 112.86700
+zoomBox -38.13350 -12.48150 156.16550 81.45500
+zoomBox -36.04800 -4.24450 129.10600 75.60150
+zoomBox -40.74500 -13.23500 153.55400 80.70150
+zoomBox -46.25000 -23.81200 182.33700 86.70150
+zoomBox -42.80700 -12.20400 151.49200 81.73250
+zoomBox -39.88050 -2.33700 125.27400 77.50900
+zoomBox -46.25050 -23.81200 182.33700 86.70150
+verifyConnectivity -type all -error 1000 -warning 50
+zoomBox -45.13700 -13.48250 149.16250 80.45400
+zoomBox -47.58450 -35.94100 221.34250 94.07550
+zoomBox -46.20200 -23.06050 182.38600 87.45350
+zoomBox -45.02700 -12.09150 149.27300 81.84550
+zoomBox -43.76500 -1.71650 121.39000 78.13000
+zoomBox -47.61800 -27.31100 180.97100 83.20350
+zoomBox -52.95050 -62.73650 263.43600 90.22500
+zoomBox -48.14650 -22.71800 180.44300 87.79650
+zoomBox -46.27000 -7.08950 148.03100 86.84800
+zoomBox -40.46700 17.77850 99.91600 85.64850
+zoomBox -49.99950 -22.86600 178.59050 87.64900
+zoomBox -59.50350 -63.30700 256.88550 89.65550
+zoomBox -72.65700 -119.28050 365.25200 92.43250
+zoomBox -3.16450 -87.78600 313.22450 65.17650
+zoomBox 5.62500 -77.99800 274.55600 52.02050
+zoomBox 8.70500 -69.14450 237.29700 41.37150
+zoomBox -147.41250 -76.69700 290.49850 135.01700
+zoomBox -198.01750 -80.92600 317.17200 168.14950
+zoomBox -168.01450 -48.86000 204.21000 131.09700
+zoomBox -124.16700 -41.17150 192.22400 111.79200
+zoomBox -88.03800 -33.58050 180.89450 96.43850
+zoomBox -64.67850 -23.95050 163.91450 86.56600
+setAnalysisMode -cppr none -clockGatingCheck true -timeBorrowing true -useOutputPinCap true -sequentialConstProp false -timingSelfLoopsNoSkew false -enableMultipleDriveNet true -clkSrcPath true -warn true -usefulSkew false -analysisType onChipVariation -log true
+zoomBox -58.34850 -12.21850 135.95550 81.72050
+zoomBox -72.12600 -37.75300 196.80750 92.26650
+zoomBox -64.92150 -22.88300 163.67200 87.63350
+zoomBox -57.97300 -10.36750 136.33150 83.57150
+zoomBox -82.71350 -54.93050 233.67900 98.03400
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix csa_multiplier_16bit_postRoute -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix csa_multiplier_16bit_postRoute -outDir timingReports
+zoomBox -73.78200 -36.40950 195.15250 93.61050
+zoomBox -105.58750 -102.35600 332.32850 109.36050
+zoomBox -93.89550 -75.57550 278.33300 104.38350
+zoomBox -83.99100 -52.77850 232.40300 100.18650
+zoomBox -62.33450 -2.93050 131.97200 91.00950
+zoomBox -68.41750 -16.93100 160.17900 93.58700
+zoomBox -75.57350 -33.40250 193.36350 96.61900
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix csa_multiplier_16bit_postRoute -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix csa_multiplier_16bit_postRoute -outDir timingReports
+zoomBox -66.96250 -17.51400 161.63450 93.00450
+zoomBox -75.57500 -33.40300 193.36350 96.61900
+zoomBox -85.70600 -52.09600 230.69200 100.87100
+zoomBox -66.96350 -17.51450 161.63400 93.00400
+zoomBox -59.64400 -4.00900 134.66450 89.93200
+zoomBox -75.62050 -34.39150 193.31900 95.63100
+zoomBox -67.88200 -16.61050 160.71650 93.90850
+ui_view_box
+ui_view_box
+dbquery -area {-67.882 -16.6105 160.7165 93.9085} -objType inst
+dbquery -area {-67.882 -16.6105 160.7165 93.9085} -objType regular
+dbquery -area {-67.882 -16.6105 160.7165 93.9085} -objType special
+ui_view_box
+ui_view_box
+dbquery -area {-67.882 -16.6105 160.7165 93.9085} -objType inst
+dbquery -area {-67.882 -16.6105 160.7165 93.9085} -objType regular
+dbquery -area {-67.882 -16.6105 160.7165 93.9085} -objType special
+zoomBox -39.38600 -4.85750 154.92250 89.08350
+zoomBox -64.37650 -17.18800 164.22200 93.33100
+streamOut CARRYSAVEMULTPLIER.GDS -libName DesignLib -units 2000 -mode ALL
